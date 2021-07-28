@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>socket io sample</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <script type="module" src="{{ url_for('static', path='script/socket.io.js') }}"></script>
+    <script type="module" src="{{ url_for('static', path='script/script.js') }}"></script>
+    <!-- <script type="text/javascript" src="../static/script/socket.io.js"></script> -->
+    <!-- <script type="text/javascript" src="../static/script/script.js"></script> -->
+</head>
+
+<body>
+    <div class="page">
+        <div class="frame">
+            <div class="grid-wrapper">
+                <div class="grid-a1">
+                    <label for="event-name">event name</label>
+                </div>
+                <div class="grid-b1">
+                    <input type="text" id="event-name"></input>
+                </div>
+                <div class="grid-a2">
+                    <label for="message">message</label>
+                </div>
+                <div class="grid-b2">
+                    <textarea id="message"></textarea>
+                </div>
+                <div class="grid-b3">
+                    <button id="emit-button">emit</button>
+                </div>
+                <div class="grid-a4">
+                    <label for="log-output">log output</label>
+                </div>
+                <div class="grid-b4">
+                    <textarea id="log-output" class="log-output" readonly disabled></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>socket io sample</footer>
+</body>
+
+</html>
